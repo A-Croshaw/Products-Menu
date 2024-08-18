@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    /*--- Fonts ---*/
+    --headers: 'EB Garamond', serif, arial;
+    --text-fonts: 'Roboto', serif, arial;
+
+    /*--- Colours ---*/
+    --white: #fff;
+    --yellow: #fffb00;
+    --bg-color: #a0a0a0;
+    --red: #770b0b;
+    --black: #000;
+    --card-body: #c4c4c4;
+    --form-bg: #e4f6fc;
+
+    /*--- Buttons ---*/
+    --btn-border: 2px solid var(--white);
+    --btn-border-hover: 2px solid var(--yellow);
+    --black-border: 2px solid var(--black);
+
+    /*--- Shadows ---*/
+    --bt-shadows: 5px -3px 15px 0px #000000e0;
+
+    /*--- borders ---*/
+    --form-border: 3px solid #313131;
+    --view-border: 4px ridge var(--black);
+
+    /*--- Nav ---*/
+    --bs-offcanvas-width-left: 280px;
+    --bs-offcanvas-width-right: 150px;
+    --yellow-shadow: 0px 6px 2px -4px #000000ef;
+    --nav-dropdown-shadows: 5px -3px 15px 0px #000000e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: var(--text-fonts);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--headers);
+}
+
+/*------------ Select Dropdown ------------*/
+select {
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--red);
+    border: var(--btn-border);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 2px 5px;
+    height: 40px;
+    box-shadow: var(--bt-shadows);
+    font-family: var(--headers);
+    font-size: 18px;
+    text-align: center;
+}
+
+.sort-select {
+    max-width: 180px;
+}
+
+select:hover {
+    border: var(--btn-border-hover);
+    color: var(--yellow);
+}
+
+option {   
+    color: var(--white);
+}
+
+/*------------ Buttons ------------*/
+.btn-all,
+.btn-side-search,
+.btn-nav-search {
+    border: var(--btn-border);
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.btn-all {
+    max-width: 180px;
+    box-shadow: var(--bt-shadows);
+}
+
+.btn-edit{
+    min-width: 95px;
+}
+
+.btn-nav-search {
+    width: 40px;
+    height: 35px;
+    padding: 0;
+}
+
+.btn-side-search {
+    width: 35px;
+    padding: 0;
+    height: 30px;
+}
+
+.btn-all:hover,
+.btn-side-search:hover,
+.btn-nav-search:hover {
+    color: var(--yellow);
+    border: var(--btn-border-hover);
+    background-color: var(--red);
+}
+
+.btn-reset {
+    text-decoration: none;
+    padding: 1px 4px 2px 4px;
+}
+
+.btn-smalls {
+    width: 60px;
+}
+
+/*------------ Header ------------*/
+/*--- Nav ---*/
+.nav-txt:hover,
+.bg-nav-dropdowns,
+.bg-nav {
+    background-color: var(--red);
+}
+
+.nav-ac-headers,
+.nav-headers,
+.nav-side-txt,
+.nav-side-headers,
+.nav-txt {
+    color: var(--white);
+}
+
+.nav-headers:hover,
+.nav-side-txt:hover,
+.nav-txt:hover {
+    color: var(--yellow);
+}
+
+.nav-headers:hover {
+    box-shadow: var(--yellow-shadow);
+}
+
+.nav-txt,
+.nav-side-txt {
+    font-size: 15px;
+}
+
+.nav-ac-headers,
+.nav-headers,
+.nav-side-headers {
+    font-family: var(--headers);
+}
+
+.nav-ac-headers,
+.nav-headers {
+    font-size: 20px;
+}
+
+.nav-side-headers {
+    font-size: 20px;
+}
+
+.logo {
+    width: 3.5em;
+    height: 1.75em;
+}
+
+/*--- Screens md + ---*/
+.bg-nav-dropdowns {
+    box-shadow: var(--nav-dropdown-shadows);
+}
+
+.search-nav-lg {
+    margin-top: 65px;
+}
+
+.nav-search {
+    height: 35px;
+}
+
+/*--- Sreens below md ---*/
+
+.navbar {
+    --bs-navbar-toggler-icon-bg-ac: url("../icons/user-gear-solid.svg");
+    --bs-navbar-toggler-icon-bg: url("../icons/bars-solid.svg");
+    --bs-navbar-toggler-transition: none;
+}
+
+.navbar-toggler-icon-ac {
+    background-image: var(--bs-navbar-toggler-icon-bg-ac);
+}
+
+.navbar-toggler-ac {
+    border: none;
+    transition: none;
+}
+
+.navbar-toggler-icon {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.navbar-toggler-icon-ac:hover {
+    --bs-navbar-toggler-icon-bg-ac: url("../icons/user-gear-solid-yellow.svg");
+}
+
+.navbar-toggler-icon:hover {
+    --bs-navbar-toggler-icon-bg: url("../icons/bars-solid-yellow.svg");
+}
+
+.nav-line {
+    color: var(--white);
+    border-width: 2px;
+}
+
+.offcanvas,
+.offcanvas-xxl,
+.offcanvas-xl,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm {
+    --bs-offcanvas-width: 30px
+}
+
+.offcanvas.offcanvas-start {
+    width: var(--bs-offcanvas-width-left);
+}
+
+.offcanvas.offcanvas-end {
+    width: var(--bs-offcanvas-width-right);
+}
+
+.side-nav-search {
+    height: 30px;
+}
+
+/*------------ Footer ------------*/
+
+footer {
+    background-color: var(--red);
+    height: 50px;
+}
+
+.footer-txt {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.footer-txt:hover {
+    color: var(--yellow);
+}
+
+.footer-icons{
+    width:30px;
+}
+
+/*------------ Generic ------------*/
+.page-headers {
+    font-size: 40px;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
+input[name='q'] {
+    border: var(--black-border);
+}
+
+.page-search {
+    max-width: 500px;
+}
+
+.sub-heading {
+    font-size: 30px;
+}
+
+.category-headers {
+    font-size: 30px;
+}
+
+.sort-txt {
+    font-size: 16px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.card-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-body {
+    background-color: var(--card-body);
+}
+
+.details,
+.method,
+.description {
+    flex: 100%;
+    border: var(--view-border);
+    background-color: var(--card-body);
+    overflow: hidden;
+}
+
+.add-box {
+    max-width: 600px;
+    background-color: var(--form-bg);
+    border: var(--view-border);
+    font-size: 18px;
+}
+
+/*------------ Forms --------------*/
+.add-ingredientd-form input {
+    width: 100px;
+}
+
+.add-step-form,
+.recipe-form,
+.add-ingredientd-form {
+    background-color: var(--form-bg);
+}
+
+.add-step-form,
+.add-ingredientd-form {
+    font-size: 20px;
+}
+
+.recipe-form {
+    max-width: 95%;
+}
+
+.add-form select,
+.add-ingredientd-form select,
+.recipe-form select {
+    max-width: 230px;
+    font-family: var(--text-fonts);
+}
+
+/*------------ Media Queries ------------*/
+@media screen and (min-width: 400px) {
+    .page-headers {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .details {
+        flex: 45%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content-offset {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content-offset {
+        margin-top: 35px;
+    }
+
+    .method {
+        flex: 30%;
+        max-width: 30%;
+    }
+
+    .details {
+        flex: 30%;
+    }
+}

@@ -1,0 +1,89 @@
+{% load static %}
+<ul class="navbar-nav justify-content-evenly flex-grow-1">
+    <li class="nav-item">
+        <a class="nav-link nav-headers" aria-current="page" href="{% url 'home' %}">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-headers" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Menus
+        </a>
+        <ul class="dropdown-menu bg-nav-dropdowns">
+            <li><a class="dropdown-item nav-txt" href="#">items</a></li>
+ 
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-headers" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dish Book
+        </a>
+        <ul class="dropdown-menu bg-nav-dropdowns">
+            <li><a class="dropdown-item nav-txt" href="#">items</a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-headers" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Sauce Book
+        </a>
+        <ul class="dropdown-menu bg-nav-dropdowns">
+            <li><a class="dropdown-item nav-txt" href="#">items</a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-headers" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Recipe Book
+        </a>
+        <ul class="dropdown-menu bg-nav-dropdowns">
+            <li><a class="dropdown-item nav-txt" href="">Recipes</a></li>
+            <li><a class="dropdown-item nav-txt" href="">Create Recipes</a></li>
+        </ul>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle nav-headers" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Products
+        </a>
+        <ul class="dropdown-menu bg-nav-dropdowns">
+            <li><a class="dropdown-item nav-txt" href="">Products</a></li>
+            {% if request.user.is_superuser %}
+            <li><a class="dropdown-item nav-txt" href="">Add Product</a></li>
+            {% endif %}
+        </ul>
+    </li>
+</ul>
+<ul class="navbar-nav justify-content-end">
+    <li class="d-none d-xl-flex pe-4">
+        <form class="d-flex pt-1" role="search">
+            <input class="form-control me-2 nav-search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-nav-search" type="submit">
+                <i class="fas fa-search fa-lg"></i>
+            </button>
+        </form>
+    </li>
+    <li class="nav-item dropdown d-none d-md-flex me-2">
+        <a class="nav-link nav-headers" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            <i class="fa-solid fa-user-gear fa-md"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-md-end bg-nav-dropdowns">
+            <li>
+                <p class="nav-ac-headers mb-0 pb-0 ps-2"> Account</p>
+            </li>
+            <li>
+                <hr class="nav-line my-0 py-0 pb-1">
+            </li>
+            <li><a class="dropdown-item nav-txt" href="">Logout</a></li>
+            <li><a class="dropdown-item nav-txt" href="">Register</a></li>
+            <li><a class="dropdown-item nav-txt" href="">Login</a></li>
+            <li>
+                <p class="nav-ac-headers mb-0 pb-0 ps-2 pt-2"> Admin</p>
+            </li>
+            <li>
+                <hr class="nav-line my-0 py-0 pb-1">
+            </li>
+            <li><a class="dropdown-item nav-txt" aria-current="page" href="">Admin Pannel</a></li>
+        </ul>
+    </li>
+</ul>
