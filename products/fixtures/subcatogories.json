@@ -1,0 +1,492 @@
+[
+    {
+        "pk": 1,
+        "model": "products.subcategory",
+        "fields": {
+            "category": 2,
+            "subcategory": "Chicken"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 2,        
+        "fields": {
+            "category": 2,
+            "subcategory": "Beef"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 3,        
+        "fields": {
+            "category": 2,
+            "subcategory": "Turkey"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 4,        
+        "fields": {
+            "category": 2,
+            "subcategory": "Pork"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 5,        
+        "fields": {
+            "category": 2,
+            "subcategory": "Lamb"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 6,        
+        "fields": {
+            "category": 2,
+            "subcategory": "Venison"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 7,        
+        "fields": {
+            "category": 2,
+            "subcategory": "Other Meat"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.subcategory",
+        "fields": {
+            "category": 7,
+            "subcategory": "Fresh Fish"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 9,        
+        "fields": {
+            "category": 7,
+            "subcategory": "Frozen Fish"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 10,        
+        "fields": {
+            "category": 7,
+            "subcategory": "Canned Fish"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.subcategory",
+        "fields": {
+            "category": 7,
+            "subcategory": "Other Fish"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 12,        
+        "fields": {
+            "category": 8,
+            "subcategory": "Fresh Shellfish"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 13,        
+        "fields": {
+            "category": 8,
+            "subcategory": "Frozen Shellfish"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 14,        
+        "fields": {
+            "category": 8,
+            "subcategory": "Canned Shellfish"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 15,        
+        "fields": {
+            "category": 8,
+            "subcategory": "Other Shellfish"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 16,        
+        "fields": {
+            "category": 3,
+            "subcategory": "Fresh Fruit"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 17,        
+        "fields": {
+            "category": 3,
+            "subcategory": "Frozen Fruit"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 18,        
+        "fields": {
+            "category": 3,
+            "subcategory": "Canned Fruit"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 19,        
+        "fields": {
+            "category": 3,
+            "subcategory": "Other Fruit"
+        }
+    },
+
+    {
+        "model": "products.subcategory",
+        "pk": 20,        
+        "fields": {
+            "category": 10,
+            "subcategory": "Fresh Vegetables"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 21,        
+        "fields": {
+            "category": 10,
+            "subcategory": "Frozen Vegetables"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 22,        
+        "fields": {
+            "category": 10,
+            "subcategory": "Canned Vegetables"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 23,        
+        "fields": {
+            "category": 10,
+            "subcategory": "Other Vegetables"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 24,        
+        "fields": {
+            "category": 9,
+            "subcategory": "Fresh Herbs"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 25,        
+        "fields": {
+            "category": 9,
+            "subcategory": "Dried Herbs"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 26,        
+        "fields": {
+            "category": 9,
+            "subcategory": "Other Herbs"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 27,        
+        "fields": {
+            "category": 9,
+            "subcategory": "Fresh Spice"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 28,        
+        "fields": {
+            "category": 9,
+            "subcategory": "Dried Spice"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 29,        
+        "fields": {
+            "category": 9,
+            "subcategory": "Other Spice"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 30,        
+        "fields": {
+            "category": 5,
+            "subcategory": "Alcohol"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 31,        
+        "fields": {
+            "category": 5,
+            "subcategory": "Hot Drinks"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 32,        
+        "fields": {
+            "category": 5,
+            "subcategory": "Cold Drinks"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 33,        
+        "fields": {
+            "category": 5,
+            "subcategory": "Other Drinks"
+        }
+    },
+
+    {
+        "model": "products.subcategory",
+        "pk": 34,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Eggs"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 35,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Creams"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 36,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Hard Cheeses"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 37,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Soft Cheeses"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 38,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Cream Cheeses"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 39,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Milks"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 40,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Yogurts"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 41,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Ice-Creams"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 42,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Butters"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 43,        
+        "fields": {
+            "category": 1,
+            "subcategory": "Other dairy"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 44,        
+        "fields": {
+            "category": 4,
+            "subcategory": "Flours"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 45,        
+        "fields": {
+            "category": 4,
+            "subcategory": "Sugars"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 46,        
+        "fields": {
+            "category": 4,
+            "subcategory": "Chocolates"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 47,        
+        "fields": {
+            "category": 4,
+            "subcategory": "Leaveners"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 48,        
+        "fields": {
+            "category": 4,
+            "subcategory": "Extracts"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 49,        
+        "fields": {
+            "category": 4,
+            "subcategory": "flavourings"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 50,        
+        "fields": {
+            "category": 4,
+            "subcategory": "decorations"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 51,        
+        "fields": {
+            "category": 4,
+            "subcategory": "Fondants"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 52,        
+        "fields": {
+            "category": 4,
+            "subcategory": "Other Baking"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 53,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Pastires"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 54,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Pastas"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 55,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Rices"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 56,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Cereals"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 57,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Nuts"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 58,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Canned Items"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 59,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Oils"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 60,        
+        "fields": {
+            "category": 6,
+            "subcategory": "Other Confectionerys"
+        }
+    },
+    {
+        "model": "products.subcategory",
+        "pk": 61,        
+        "fields": {
+            "category": 11,
+            "subcategory": "N/A"
+        }
+    }
+]

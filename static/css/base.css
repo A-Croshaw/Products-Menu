@@ -66,7 +66,7 @@ select {
 }
 
 .sort-select {
-    max-width: 180px;
+    width: 160px;
 }
 
 select:hover {
@@ -76,6 +76,10 @@ select:hover {
 
 option {   
     color: var(--white);
+}
+
+.filter-bg {
+    background-color: var(--bg-color);
 }
 
 /*------------ Buttons ------------*/
@@ -350,6 +354,7 @@ input[name='q'] {
     max-width: 230px;
     font-family: var(--text-fonts);
 }
+
 
 /*------------ Media Queries ------------*/
 @media screen and (min-width: 400px) {

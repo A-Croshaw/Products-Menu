@@ -8,10 +8,14 @@ Home
 
 {% block content %}
 
-<div class="container-fluid pt-md-3">
-        <div class="row mt-5 mt-md-2">
-                <h1 class="text-center"> Products To Menu</h1>
-        </div>
+<div class="container-fluid pt-md-3" id="home">
+
+                <div class="row mt-5 mt-md-2">
+                        <h1 class="text-center"> Products To Menu</h1>
+                </div>
+
+
+        <a class="navbar-brand" href="{% url 'product-manager' %}">Products</a>
 </div>
 
 {% endblock %}

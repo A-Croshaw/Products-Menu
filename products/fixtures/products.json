@@ -1,0 +1,134 @@
+[
+    {
+        "model": "products.product",
+        "pk": 1,        
+        "fields": {
+            "subcategory":2,
+            "category": 2,
+            "cost": 1.00,
+            "product": "steak",
+            "unit": "QTY",
+            "quantity": 10
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,        
+        "fields": {
+            "subcategory":8,
+            "category": 7,
+            "cost": 1.00,
+            "product": "hake",
+            "unit": "G",
+            "quantity": 1000
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 3,        
+        "fields": {
+            "subcategory":1,
+            "category": 8,
+            "cost": 1.00,
+            "product": "pawns",
+            "unit": "G",
+            "quantity": 1000
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,        
+        "fields": {
+            "subcategory":16,
+            "category": 3,
+            "cost": 1.00,
+            "product": "apples",
+            "unit": "G",
+            "quantity": 1000
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,        
+        "fields": {
+            "subcategory":20,
+            "category": 10,
+            "cost": 1.00,
+            "product": "carrots",
+            "unit": "G",
+            "quantity": 1000
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 6,        
+        "fields": {
+            "subcategory":24,
+            "category": 9,
+            "cost": 1.00,
+            "product": "basil",
+            "unit": "G",
+            "quantity": 500
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 7,        
+        "fields": {
+            "subcategory":27,
+            "category": 9,
+            "cost": 1.00,
+            "product": "birds eye chillie",
+            "unit": "G",
+            "quantity": 200
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 8,        
+        "fields": {
+            "subcategory":30,
+            "category": 5,
+            "cost": 1.00,
+            "product": "rum",
+            "unit": "ML",
+            "quantity": 700
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 9,        
+        "fields": {
+            "subcategory":34,
+            "category": 1,
+            "cost": 1.00,
+            "product": "eggs",
+            "unit": "QTY",
+            "quantity": 12
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 10,        
+        "fields": {
+            "subcategory":44,
+            "category": 4,
+            "cost": 1.00,
+            "product": "white chocolate",
+            "unit": "G",
+            "quantity": 2000
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 11,        
+        "fields": {
+            "subcategory":61,
+            "category": 11,
+            "cost": 1.00,
+            "product": "buns",
+            "unit": "QTY",
+            "quantity": 10
+        }
+    }
+]
