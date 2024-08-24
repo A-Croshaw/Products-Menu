@@ -1,0 +1,44 @@
+[
+    {
+        "model": "recipes.recipecategory",
+        "pk": 1,
+        "fields": {
+            "category": "Desserts"
+        }
+    },
+    {
+        "model": "recipes.recipecategory",
+        "pk": 2,
+        "fields": {
+            "category": "Starters"
+        }
+    },
+    {
+        "model": "recipes.recipecategory",
+        "pk": 3,
+        "fields": {
+            "category": "Mains"
+        }
+    },
+    {
+        "model": "recipes.recipecategory",
+        "pk": 4,
+        "fields": {
+            "category": "Sides"
+        }
+    },
+    {
+        "model": "recipes.recipecategory",
+        "pk": 5,
+        "fields": {
+            "category": "Sauces"
+        }
+    },
+    {
+        "model": "recipes.recipecategory",
+        "pk": 6,
+        "fields": {
+            "category": "Dessert Sauces"
+        }
+    }
+]

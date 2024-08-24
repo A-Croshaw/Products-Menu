@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
 
 
 class Category(models.Model):
@@ -63,6 +62,14 @@ class Product(models.Model):
     unit = models.CharField(
         max_length=10,
         choices=UNIT_CHOICE
+    )
+    product_cost = models.DecimalField(
+        max_digits=15,
+        decimal_places=0,
+        default=0,
+        null=False,
+        blank=False,
+        editable=False,
     )
 
     class Meta:
