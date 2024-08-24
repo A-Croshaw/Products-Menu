@@ -2,7 +2,6 @@ import django_filters
 from products.models import Product, Category, Subcategory
 
 
-
 class ProductFilter(django_filters.FilterSet):
     catergory = django_filters.ModelChoiceFilter(
         queryset=Category.objects.all(),
@@ -21,4 +20,3 @@ class ProductFilter(django_filters.FilterSet):
     class Meta:
         model = Product
         fields = ('category', 'subcategory',)
-

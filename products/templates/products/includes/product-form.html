@@ -1,0 +1,57 @@
+{% load widget_tweaks %}
+<div class="row justify-content-center">
+    <div class="col-12 mb-1 text-center">
+        {{ form.product|add_label_class:"label form-txt" }}
+    </div>
+    <div class="col-12 mb-2 text-center">
+        {% render_field form.product class="input rounded-2" %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 mb-1 text-center">
+        {{ form.quantity|add_label_class:"label form-txt" }}
+    </div>
+    <div class="col-12 mb-2 text-center">
+        {% render_field form.quantity class="input rounded-2" %}
+
+        {% for error in form.quantity.errors %}
+            <p class="error mt-1 text-center"> {{ error }}</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 mb-1 text-center">
+        {{ form.unit|add_label_class:"label form-txt" }}
+    </div>
+    <div class="col-12 mb-2 text-center">
+        {% render_field form.unit class="select" %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 mb-1 text-center">
+        {{ form.cost|add_label_class:"label form-txt" }}€
+    </div>
+    <div class="col-12 mb-2 text-center">
+        {% render_field form.cost class="input rounded-2" %}
+
+        {% for error in form.cost.errors %}
+            <p class="error mt-1 text-center"> {{ error }}</p>
+        {% endfor %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 mb-1 text-center">
+        {{ form.category|add_label_class:"label form-txt" }}
+    </div>
+    <div class="col-12 mb-2 text-center">
+        {% render_field form.category class="select sort-select" %}
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-12 mb-1 text-center">
+        {{ form.subcategory|add_label_class:"label form-txt" }}
+    </div>
+    <div class="col-12 mb-2 text-center">
+        {% render_field form.subcategory class="select sort-select" %}
+    </div>
+</div>

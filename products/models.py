@@ -35,8 +35,8 @@ class Product(models.Model):
     A model to create and manage Products
     """
     UNIT_CHOICE = (
-        ('grams', 'g'),
-        ('quantity', 'qty'),
+        ('g', 'g'),
+        ('qty', 'qty'),
         ('ml', 'ml'),
     )
 

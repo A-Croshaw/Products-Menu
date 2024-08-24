@@ -1,0 +1,15 @@
+<div class="container-fluid mt-5">
+    <div class="row justify-content-center pt-5">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 ">
+            <div role="alert" class="alert form-bg">
+                <p class="text-center text-black">{{ message }}</p>
+            </div>
+            <div class="row justify-content-evenly mt-4">
+                <button class="btn btn-all" hx-get="{% url 'product-manager' %}" hx-target="#product-add"
+                    hx-push-url="true">
+                    Return To Products
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

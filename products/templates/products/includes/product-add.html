@@ -1,0 +1,26 @@
+{% load static %}
+<div class="container-fluid" >
+    <div class="row mt-5">
+            <h1 class="text-center"> Add Product</h1>
+            <hr></hr>
+    </div>
+    <div class="row justify-content-center pt-sm-3">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 ">
+            <form hx-post="{% url 'product-add' %}" hx-target="#product-add" hx-push-url="true" class="form-control rounded-2 p-3 form-bg">
+            
+                {% include 'products/includes/product-form.html' %}
+                <div class="row justify-content-evenly mt-4">
+                    <button class="btn btn-all my-2">
+                        Add
+                    </button>
+                    <button class="btn btn-all my-2" 
+                        hx-get="{% url 'product-manager' %}" 
+                        hx-target="#product-add"
+                        hx-push-url='/products'>
+                        Cancel
+                    </button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
