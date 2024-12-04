@@ -36,8 +36,8 @@ class RecipeAdmin(admin.ModelAdmin):
     """
     fieldsets = []
     inlines = (IngredientsAdminInline, MethodAdminInline)
-    list_filter = ("category", "recipe",)
-    ordering = ("category", "recipe",)
+    list_filter = ("category", "recipe_name",)
+    ordering = ("category", "recipe_name",)
 
 
 admin.site.register(Recipe, RecipeAdmin)

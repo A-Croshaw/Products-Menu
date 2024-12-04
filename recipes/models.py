@@ -23,7 +23,7 @@ class Recipe(models.Model):
         ('other', 'Other'),
     )
 
-    recipe = models.CharField(
+    recipe_name = models.CharField(
         max_length=200,
         null=True,
         blank=False
@@ -63,10 +63,10 @@ class Recipe(models.Model):
         self.save()
 
     class Meta:
-        ordering = ["recipe"]
+        ordering = ["recipe_name"]
 
     def __str__(self):
-        return str(self.recipe)
+        return str(self.recipe_name)
 
 
 class Ingredients(models.Model):
@@ -99,7 +99,7 @@ class Ingredients(models.Model):
         default="g",
     )
     ingredient_cost = models.DecimalField(
-        max_digits=6,
+        max_digits=16,
         decimal_places=2,
         null=True,
         blank=False,
@@ -111,6 +111,7 @@ class Ingredients(models.Model):
         Override the original save method to set the ingredientline_total
         and update the cost.
         """
+
         self.ingredient_cost =  (
                 self.ingredient.cost / self.ingredient.quantity) * self.quantity
         super().save(*args, **kwargs)

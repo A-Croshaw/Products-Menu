@@ -1,0 +1,28 @@
+    <div class="row p-0 m-0">
+        <div class="col-5">
+            <p class="p-0 m-0">- {{ ingredient.ingredient|title }}</p>
+        </div>
+        <div class="col-3 col-lg-2">
+            <p class="p-0 m-0 text-end">{{ ingredient.quantity }}{{ ingredient.unit }}</p>
+        </div>
+        <div class="col-4 col-lg-2">
+            <p class="p-0 m-0 text-end">{{ ingredient.ingredientline_total }}</p>
+        </div>
+        <div class="col-12 col-lg-3">
+            <div class="row justify-content-end p-0 m-0">
+                <div class="col-6">
+                    <button hx-get="{% url 'ingredient-update' ingredient.id %}" hx-push-url="true" hx-target="#ingredient{{ingredient.id}}"
+                    class="btn text-primary btn-smalls">
+                    Edit
+                </button>
+                </div>
+                <div class="col-6">
+                    <button hx-post="{% url 'ingredient-delete' ingredient.id %}" hx-push-url="true" hx-confirm="Are you sure you want to delete this ingredient?" hx-target="#ingredient{{ingredient.id}}"
+                    class="btn text-danger btn-smalls">
+                    Delete
+                </button>
+                </div>
+
+            </div>
+        </div>
+    </div>

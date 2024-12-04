@@ -2,54 +2,39 @@
 <div class="row justify-content-center">
     <div class="col-10 mb-1 text-center">
         <div class="row">
-            {{ form.product|add_label_class:"label form-txt" }}
+            {{ form.recipe_name|add_label_class:"label form-txt" }}
         </div>
     </div>
     <div class="col-10 mb-2 text-center">
         <div class="row">
-            {% render_field form.product class="input rounded-2" %}
+            {% render_field form.recipe_name class="input rounded-2" %}
         </div>
     </div>
 </div>
 <div class="row justify-content-center">
     <div class="col-10 mb-1 text-center">
         <div class="row">
-            {{ form.quantity|add_label_class:"label form-txt" }}
+            {{ form.description|add_label_class:"label form-txt" }}
         </div>
     </div>
     <div class="col-10 mb-2 text-center">
         <div class="row">
-            {% render_field form.quantity class="input rounded-2" %}
-        </div>
-        {% for error in form.quantity.errors %}
-        <p class="error mt-1 text-center"> {{ error }}</p>
-        {% endfor %}
-    </div>
-</div>
-<div class="row justify-content-center">
-    <div class="col-10 mb-1 text-center">
-        <div class="row">
-            {{ form.unit|add_label_class:"label form-txt" }}
-        </div>
-    </div>
-    <div class="col-10 mb-2 text-center">
-        <div class="row">
-            {% render_field form.unit class="select" %}
+            {% render_field form.description class="input rounded-2" %}
         </div>
     </div>
 </div>
 <div class="row justify-content-center">
     <div class="col-10 mb-1 text-center">
         <div class="row">
-            {{ form.cost|add_label_class:"label form-txt" }}€
+            {{ form.portions|add_label_class:"label form-txt" }}
         </div>
     </div>
     <div class="col-10 mb-2 text-center">
         <div class="row">
-            {% render_field form.cost class="input rounded-2" %}
+            {% render_field form.portions class="input rounded-2" %}
         </div>
-        {% for error in form.cost.errors %}
-        <p class="error mt-1 text-center"> {{ error }}</p>
+        {% for error in form.portions.errors %}
+            <p class="error mt-1 text-center"> {{ error }}</p>
         {% endfor %}
     </div>
 </div>

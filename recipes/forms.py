@@ -28,29 +28,34 @@ class RecipeForm(forms.ModelForm):
         queryset=RecipeCategory.objects.all(),
         widget=forms.Select()
     )
-
+    def clean_portions(self):
+        """ Function To Raise Validation Error If Value Is 0"""
+        portions = self.cleaned_data['portions']
+        if portions <= 0:
+            raise forms.ValidationError("Portions must be a 1 or above ")
+        return portions
     class Meta:
         """
         Form Fields
         """
         model = Recipe
-        fields = ("recipe",
+        fields = ("recipe_name",
                   "description",
                   "category",
                   "subcategory",
                   "portions",
                   )
         labels = {
-            "recipe": "Recipe",
+            "recipe_name": "Recipe",
             "description": "Description",
             "category": "Category",
-            "subcategory": "SubCategory",
+            "subcategory": "Subcategory",
             "portions": "Portions",
         }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['recipe'].widget.attrs['autofocus'] = True
+        self.fields['recipe_name'].widget.attrs['autofocus'] = True
         self.fields['description'].widget.attrs = {'rows': 3}
 
 

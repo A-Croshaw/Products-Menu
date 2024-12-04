@@ -63,17 +63,11 @@ class Product(models.Model):
         max_length=10,
         choices=UNIT_CHOICE
     )
-    product_cost = models.DecimalField(
-        max_digits=15,
-        decimal_places=0,
-        default=0,
-        null=False,
-        blank=False,
-        editable=False,
-    )
+
+    def __str__(self):
+        return self.product
 
     class Meta:
         ordering = ["product"]
 
-    def __str__(self):
-        return f"{self.quantity}{self.unit} of {self.product} for {self.cost}"
+

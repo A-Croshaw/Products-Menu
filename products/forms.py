@@ -21,7 +21,7 @@ class ProductForm(forms.ModelForm):
         return cost
     
     def clean_quantity(self):
-        """ Function To Raise Validation EError If Value Is 0"""
+        """ Function To Raise Validation Error If Value Is 0"""
         quantity = self.cleaned_data['quantity']
         if quantity <= 0:
             raise forms.ValidationError("Quantity must be a 1 or above ")
