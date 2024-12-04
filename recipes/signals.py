@@ -1,7 +1,7 @@
 from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 
-from .models import Ingredients, Product
+from .models import Ingredients
 
 @receiver(post_save, sender=Ingredients)
 def update_on_save(sender, instance, created, **kwargs):

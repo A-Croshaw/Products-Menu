@@ -1,0 +1,30 @@
+[
+    {
+        "model": "dishes.dishcategory",
+        "pk": 1,
+        "fields": {
+            "category": "Desserts"
+        }
+    },
+    {
+        "model": "dishes.dishcategory",
+        "pk": 2,
+        "fields": {
+            "category": "Starters"
+        }
+    },
+    {
+        "model": "dishes.dishcategory",
+        "pk": 3,
+        "fields": {
+            "category": "Mains"
+        }
+    },
+    {
+        "model": "dishes.dishcategory",
+        "pk": 4,
+        "fields": {
+            "category": "Sides"
+        }
+    }
+]

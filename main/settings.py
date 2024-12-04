@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'recipes',
+    'dishes',
 ]
 
 MIDDLEWARE = [

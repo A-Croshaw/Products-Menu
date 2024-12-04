@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Dish Manager
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid pt-3" id="dishes">
+    {% include "dishes/includes/dish-list-container.html" %}
+</div>
+{% endblock %}
